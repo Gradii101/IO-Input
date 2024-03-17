@@ -34,7 +34,7 @@ print('\33[1m'"Birthdate"'\33[0m')
 
 for line in file:
     words = line.split()                # Split words in each line
-    birth_date = words[2:5]             # Take last 3 characters
+    birth_date = words[2:5]             # Take last 3 words (DOBs)
     birth_date = (" ").join(birth_date)          
     print(birth_date)                   # Print DOB
     dob.extend(birth_date)              # Add DOB to container
